@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
 
     private fun fetchData() {
         //volley library
-        val url = "http://newsapi.org/v2/top-headlines?country=us&apiKey=db81d452deed4718920bb16d6b9784db"
+        val url = "http://newsapi.org/v2/top-headlines?country=in&apiKey=db81d452deed4718920bb16d6b9784db"
         //making a request
         val jsonObjectRequest = object: JsonObjectRequest(
             Request.Method.GET,
