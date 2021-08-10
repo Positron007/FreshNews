@@ -19,7 +19,7 @@ class NewsListAdapter( private val listener: NewsItemClicked): RecyclerView.Adap
         view.setOnClickListener {
             listener.onItemClicked(items[viewHolder.adapterPosition])
         }
-        return NewsViewHolder(view)
+        return viewHolder
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
